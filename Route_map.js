@@ -167,7 +167,7 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 }
 
 speakout.addEventListener("click", async() => {
-  const response = await fetch("https://texttospeech.googleapis.com/v1/text:synthesize?key=AIzaSyAeQf0d8eeHT-8urtIHRQH4c8hVktUe52E", {
+  const response = await fetch("https://texttospeech.googleapis.com/v1/text:synthesize?key=", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -206,7 +206,7 @@ speakout.addEventListener("click", async() => {
     const options = {
       method: 'POST',
       headers: {
-        'x-rapidapi-key': 'e877beadc9msh297fea542b4d09fp10cc8ajsn376528f78c77',
+        'x-rapidapi-key': '7',
         'x-rapidapi-host': 'free-google-translator.p.rapidapi.com',
         'Content-Type': 'application/json'
       },
@@ -431,7 +431,7 @@ const updateExchangeRate = async () => {
    const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': 'e3d47bc1ddmsh63e3f53ba63218ap1df25fjsncf040ccd6dd7',
+		'x-rapidapi-key': '',
 		'x-rapidapi-host': 'currency-conversion-and-exchange-rates.p.rapidapi.com'
 	}
 };
@@ -642,4 +642,5 @@ var input1 = document.getElementById("from");
 var autocomplete1 = new google.maps.places.Autocomplete(input1, options);
 
 var input2 = document.getElementById("to");
+
 var autocomplete2 = new google.maps.places.Autocomplete(input2, options);
